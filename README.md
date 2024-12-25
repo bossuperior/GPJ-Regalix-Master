@@ -12,3 +12,5 @@
 - 6652300656 Natthawut Ongkhachuen 
 - 6652300923 Setthawut Baowanont 
 - 6652300931 Komkrit Tungtatiyapat
+
+###Noted: We wrote git ignore nodemodule , so you need to install nodemodule again. The list of modules can be found in the package.json file.
