@@ -1,0 +1,6 @@
+/Backend/node_modules
+/Backend/node_modules/package-lock.json
+/checkout+orders_part/node_modules
+/checkout+orders_part/package-lock.json
+/frontend/node_modules
+/frontend/package-lock.json

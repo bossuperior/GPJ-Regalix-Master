@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-4605c815f1874757bc9ac33aa114fb0f.css?vsn=d"
+    >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.7.1/css/all.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.7.1/css/sharp-duotone-thin.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.7.1/css/sharp-duotone-solid.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.7.1/css/sharp-duotone-regular.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.7.1/css/sharp-duotone-light.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.7.1/css/sharp-thin.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.7.1/css/sharp-solid.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.7.1/css/sharp-regular.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.7.1/css/sharp-light.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.7.1/css/duotone-thin.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.7.1/css/duotone-regular.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.7.1/css/duotone-light.css"
+      >
+
+      <!-- LINK FAWS -->
+
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./wishlisht.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <div id="page" class="cart-page">
+        <div id="noti-addtocart" class="notification notification--addtocart no-overlay">
+            <div class="notification__content">Item was added to 
+                <a href="cart-page.html">your shopping bag</a>
+            </div>
+        </div>
+        <div id="noti-addtowishlist" class="notification notification--addtowishlist no-overlay">
+            <div class="notification__content">Item was added to 
+                <a href="wishlist-page.html">your wishlist</a>
+            </div>
+        </div>
+        <!-- notification-->
+
+        <header class="header-main active">
+            <div class="sticky" style="height: 32px;">
+                <div class="sticky__content sticky__content--pinned" style="top:0">
+                    <div class="announcement announcement--bg-black announcement--text-white">
+                        <div class="announcement__contents">
+
+                            <div class="announcement__contents__item">
+
+                                <i class="fa-regular fa-snowflake fa-flip" style="color: #ffffff;"></i>
+                                Winter is coming ... Up to 25% off
+                                <i class="fa-regular fa-snowflake fa-flip" style="color: #ffffff;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-top mobile-hide">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <div class="left">
+                            <ul class="flexitem main-links">
+                                <li><a id="text" class="active" href="#">MEN</a></li>
+                                |
+                                <li><a id="text" href="women-page.html">WOMEN</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- header-top -->
+            <div id="header-nav" class="header-nav">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <div class="menu-bar">
+                            <a href="#" class="trigger desktop-hide" data-target="mobile-menu"><i
+                                    class="fal fa-bars"></i></a>
+                        </div>
+
+                        <div class="left">
+                            <div class="logo">
+                                <a href="/"><img src="images/regalix-logo-1.png" alt=""></a>
+                            </div>
+                        </div>
+                        <nav class="middle mobile-hide">
+                            <ul class="flexitem second-links">
+                                <li><a id="text" href="/">HOME</a></li>
+                                <li class="has-child">
+                                    <a id="text" href="#">NEW ARRIVALS</a>
+                                    <div class="mega">
+                                        <div class="container">
+                                            <div class="wrapper">
+                                                <div class="flexcol">
+                                                    <div class="row">
+                                                        <h4>Discover Now</h4>
+                                                        <ul class="sub-menu list-block">
+                                                            <li><a href="">This Week</a></li>
+                                                            <li><a href="">Previous Week</a></li>
+                                                            <li><a href="">Exclusive</a></li>
+                                                            <li><a href="">New Season</a></li>
+                                                            <li><a href=""></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="flexcol">
+                                                    <div class="row">
+                                                        <h4>Just In</h4>
+                                                        <ul class="sub-menu list-block">
+                                                            <li><a href="shop-page.html">Clothing</a></li>
+                                                            <li><a href="">Shoes</a></li>
+                                                            <li><a href="">Bags</a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="flexcol products">
+                                                    <div class="row">
+                                                        <h4>New Arrivals</h4>
+                                                        <div class="media">
+                                                            <div class="thumbnail"><a href=""><img class="new-arrivals-mega" src="images/clothing/2.png" alt=""></a></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <script>
+                                                    fetch('http://localhost:5000/api/latest')
+                                                        .then(response => response.json())
+                                                        .then(data => {
+
+                                                            if (data && data.length > 0) {
+                                                                const firstProduct = data[0];
+
+                                                                console.log(firstProduct);
+                                                                document.querySelector('.new-arrivals-mega').src = `http://localhost:3000/uploads/${firstProduct.file}`;
+                                                            }
+                                                        })
+                                                        .catch(error => {
+                                                            console.error('Error fetching data:', error);
+                                                        });
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="has-child">
+                                    <a id="text" href="shop-page.html">CLOTHING</a>
+                                    <div class="mega">
+                                        <div class="container">
+                                            <div class="wrapper">
+                                                <div class="flexcol">
+                                                    <div class="row">
+                                                        <h4>Discover Now</h4>
+                                                        <ul class="sub-menu list-block">
+                                                            <li><a href="">This Week</a></li>
+                                                            <li><a href="">Previous Week</a></li>
+                                                            <li><a href="">Exclusive</a></li>
+                                                            <li><a href="">New Season</a></li>
+                                                            <li><a href=""></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="flexcol">
+                                                    <div class="row">
+                                                        <h4>Just In</h4>
+                                                        <ul class="sub-menu list-block">
+                                                            <li><a href="shop-page.html">Clothing</a></li>
+                                                            <li><a href="">Shoes</a></li>
+                                                            <li><a href="">Bags</a></li>
+                                                            <li><a href=""></a></li>
+                                                            <li><a href=""></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="flexcol products">
+                                                    <div class="row">
+                                                        <h4>Black Collections</h4>
+                                                        <div class="media">
+                                                            <div class="thumbnail"><a href=""><img
+                                                                        src="images/bg/banner1.jpg" alt=""></a></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a id="text" href="shop.html">SHOES</a></li>
+                                <li><a id="text" href="#">BAGS</a></li>
+                                <li><a id="text" class="red-text" href="#">Sale</a></li>
+                            </ul>
+                        </nav>
+                        <div id="search-active" class="right no-overlay">
+                            <ul class="flexitem second-links">
+                                <li id="search-icon" class="search-icon">
+                                    <div id="search-float" class="search-float">
+                                        <div class="flexitem">
+                                            <i class="fal fa-search"></i>
+                                            <form action="" class="search">
+                                                <input type="search" class="input" id="" placeholder="Search...">
+                                            </form>
+                                            <i class="fal fa-times" close-button></i>
+                                        </div>
+                                    </div>
+                                    <a href="#" trigger-button data-target="search-active">
+                                        <div class="icon-small">
+                                            <i class="fal fa-search end-icon"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mobile-hide"><a href="wishlist-page.html">
+                                        <div class="icon-small"><i class="fal fa-star"></i></div>
+                                    </a></li>
+                                <li class="mobile-hide">
+                                    <a href="cart-page.html" class="iscart">
+                                        <span class="shoppingbag__counter">1</span>
+                                        <span class="icon-small"><i class="fal fa-shopping-bag end-icon"></i></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="login flexitem">
+                                        <a href="/login">
+                                            <div id="loginCheck" class="icon-small"><i class="fal fa-user end-icon"></i>
+                                            </div>
+                                        </a>
+                                        <a href="/">
+                                            <div id="logOutButton" class="icon-small"> </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <!-- <li><a href="/">
+                                        <div id="logOutButton" class="icon-small"> </div>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header-->
+
+        <script>
+            //logout
+            const handleLogout = () => {
+                localStorage.clear();
+                window.location.href = "/";
+            };
+            const loginCheck = document.getElementById("loginCheck");
+            const logoutCheck = document.getElementById("logOutButton");
+            const originalText = loginCheck.innerHTML;
+
+            const token = localStorage.getItem("token");
+            const user = JSON.parse(localStorage.getItem("user"));
+            //login
+            if (token && user) {
+                loginCheck.innerText = `Welcome, ${user.name.slice(0, 3)}..`;
+                loginCheck.classList.add("active");
+                logoutCheck.innerText = "Log out";
+                logoutCheck.addEventListener("click", handleLogout);
+                loginCheck.parentNode.href = "user.html";
+            } else {
+                loginCheck.innerHTML = originalText;
+                console.log("Not logged in.");
+            }
+        </script>
+        
+        <main>
+            <div class="content">
+                <div class="wishlist" data-role="page">
+                    <div class="wishlist__header">
+                        <div class="list__header">
+                            <div class="list__header__title">My Wishlist</div>
+                        </div>
+                    </div>
+                 
+                    <div class="wishlist__products">
+                        
+                        <div class="list__container">
+                            <div class="item item--inwishlist">
+                                <div class="item__header">
+                                    <div class="labels">
+                                        <div class="labels__wrapper">
+                                            <span class="labels__label">New Arrival</span>
+                                        </div>
+                                    </div>
+                                    <div class="item__actions">
+                                        <span class="icon"><i class="fal fa-times"></i></span>
+                                    </div>
+                                </div>
+                                <a class="item__link" href="page-single.html">
+                                    <div class="dotgrid carouselbox">
+                                        <div class="item__images dot-image">
+                                            <div class="thumbnail"><img src="images/clothing/2.png" alt=""> </div>
+                                            <div class="thumbnail hover"> <img src="images/clothing/3.png" alt=""> </div>
+                                        </div>
+                                    </div>          
+                                </a>
+                                <div class="item__info">
+                                    <div class="item__info__header">
+                                        <div class="item__info__header__designer">Dior Eyewear</div>
+                                    </div>
+                                    <div class="item__info__footer">
+                                        <div class="pricing">
+                                            <div class="pricing__prices">
+                                                <div class="pricing__prices__wrapper">
+                                                    <span class="pricing__prices__value pricing__prices__value--original">
+                                                        <span class="pricing__prices__price"> ฿ 1,675.00 </span>
+                                                    </span>
+                                                    <span class="pricing__prices__value pricing__prices__value--discount">
+                                                        <span class="pricing__prices__price"> </span>
+                                                    </span>
+                                                </div>
+                                                <div class="pricing__info"><span class="pricing__info__percentage"></span></div>
+                                            </div>
+                                        </div>
+                                        <div class="item__info__footer__wishlistdetails"><span
+                                                class="item__info__footer__wishlistdetails__sku">item no. P00970047-1</span><span
+                                                class="item__info__footer__wishlistdetails__quantityhint"></span><span
+                                                class="item__info__footer__wishlistdetails__onesize"></span>
+                                            <div class="button-1">
+                                                <div class="button__text">Move to bag</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="variantslistflyout">
+                                    <div class="variantslistflyout__bg"></div>
+                                    <div class="variantslistflyout__inner">
+                                        <div class="variantslistflyout__inner__close"><span class="icon__close"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item item--inwishlist item--sale">
+                                <div class="item__header">
+                                    <div class="labels">
+                                        <div class="labels__wrapper">
+                                            <span class="labels__label">New Arrival</span>
+                                        </div>
+                                    </div>
+                                    <div class="item__actions">
+                                        <span class="icon"><i class="fal fa-times"></i></span>
+                                    </div>
+                                </div>
+                                <a class="item__link" href="page-single.html">
+                                    <div class="dotgrid carouselbox">
+                                        <div class="item__images dot-image">
+                                            <div class="item__images__image thumbnail"><img src="images/clothing/12.png" alt=""> </div>
+                                            <div class="thumbnail hover"> <img src="images/clothing/13.png" alt=""> </div>
+                                        </div>
+                                    </div>          
+                                </a>
+                                <div class="item__info">
+                                    <div class="item__info__header">
+                                        <div class="item__info__header__designer">Dior Eyewear</div>
+                                    </div>
+                                    <div class="item__info__footer">
+                                        <div class="pricing">
+                                            <div class="pricing__prices">
+                                                <div class="pricing__prices__wrapper">
+                                                    <span class="pricing__prices__value pricing__prices__value--original">
+                                                        <span class="pricing__prices__price"> ฿ 1,675.00 </span>
+                                                    </span>
+                                                    <span class="pricing__prices__value pricing__prices__value--discount">
+                                                        <span class="pricing__prices__price"> ฿ 1,172.00 </span>
+                                                    </span>
+                                                </div>
+                                                <div class="pricing__info"><span class="pricing__info__percentage">( 30% off)</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="item__info__footer__wishlistdetails"><span
+                                                class="item__info__footer__wishlistdetails__sku">item no. P00970047-1</span><span
+                                                class="item__info__footer__wishlistdetails__quantityhint">dwdwdwd</span><span
+                                                class="item__info__footer__wishlistdetails__onesize">XX</span>
+                                            <div class="button-1">
+                                                <div class="button__text">Move to bag</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item item--inwishlist">
+                                <div class="item__header">
+                                    <div class="labels">
+                                        <div class="labels__wrapper">
+                                            <span class="labels__label">New Arrival</span>
+                                        </div>
+                                    </div>
+                                    <div class="item__actions">
+                                        <span class="icon"><i class="fal fa-times"></i></span>
+                                    </div>
+                                </div>
+                                <a class="item__link" href="page-single.html">
+                                    <div class="dotgrid carouselbox">
+                                        <div class="item__images dot-image">
+                                            <div class="thumbnail"><img src="images/clothing/2.png" alt=""> </div>
+                                            <div class="thumbnail hover"> <img src="images/clothing/3.png" alt=""> </div>
+                                        </div>
+                                    </div>          
+                                </a>
+                                <div class="item__info">
+                                    <div class="item__info__header">
+                                        <div class="item__info__header__designer">Dior Eyewear</div>
+                                    </div>
+                                    <div class="item__info__footer">
+                                        <div class="pricing">
+                                            <div class="pricing__prices">
+                                                <div class="pricing__prices__wrapper">
+                                                    <span class="pricing__prices__value pricing__prices__value--original">
+                                                        <span class="pricing__prices__price"> ฿ 1,675.00 </span>
+                                                    </span>
+                                                    <span class="pricing__prices__value pricing__prices__value--discount">
+                                                        <span class="pricing__prices__price"> </span>
+                                                    </span>
+                                                </div>
+                                                <div class="pricing__info"><span class="pricing__info__percentage"></span></div>
+                                            </div>
+                                        </div>
+                                        <div class="item__info__footer__wishlistdetails"><span
+                                                class="item__info__footer__wishlistdetails__sku">item no. P00970047-1</span><span
+                                                class="item__info__footer__wishlistdetails__quantityhint"></span><span
+                                                class="item__info__footer__wishlistdetails__onesize"></span>
+                                            <div class="button-1">
+                                                <div class="button__text">Move to bag</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="variantslistflyout">
+                                    <div class="variantslistflyout__bg"></div>
+                                    <div class="variantslistflyout__inner">
+                                        <div class="variantslistflyout__inner__close"><span class="icon__close"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item item--inwishlist">
+                                <div class="item__header">
+                                    <div class="labels">
+                                        <div class="labels__wrapper">
+                                            <span class="labels__label">New Arrival</span>
+                                        </div>
+                                    </div>
+                                    <div class="item__actions">
+                                        <span class="icon"><i class="fal fa-times"></i></span>
+                                    </div>
+                                </div>
+                                <a class="item__link" href="page-single.html">
+                                    <div class="dotgrid carouselbox">
+                                        <div class="item__images dot-image">
+                                            <div class="thumbnail"><img src="images/clothing/2.png" alt=""> </div>
+                                            <div class="thumbnail hover"> <img src="images/clothing/3.png" alt=""> </div>
+                                        </div>
+                                    </div>          
+                                </a>
+                                <div class="item__info">
+                                    <div class="item__info__header">
+                                        <div class="item__info__header__designer">Dior Eyewear</div>
+                                    </div>
+                                    <div class="item__info__footer">
+                                        <div class="pricing">
+                                            <div class="pricing__prices">
+                                                <div class="pricing__prices__wrapper">
+                                                    <span class="pricing__prices__value pricing__prices__value--original">
+                                                        <span class="pricing__prices__price"> ฿ 1,675.00 </span>
+                                                    </span>
+                                                    <span class="pricing__prices__value pricing__prices__value--discount">
+                                                        <span class="pricing__prices__price"> </span>
+                                                    </span>
+                                                </div>
+                                                <div class="pricing__info"><span class="pricing__info__percentage"></span></div>
+                                            </div>
+                                        </div>
+                                        <div class="item__info__footer__wishlistdetails"><span
+                                                class="item__info__footer__wishlistdetails__sku">item no. P00970047-1</span><span
+                                                class="item__info__footer__wishlistdetails__quantityhint"></span><span
+                                                class="item__info__footer__wishlistdetails__onesize"></span>
+                                            <div class="button-1">
+                                                <div class="button__text">Move to bag</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="variantslistflyout">
+                                    <div class="variantslistflyout__bg"></div>
+                                    <div class="variantslistflyout__inner">
+                                        <div class="variantslistflyout__inner__close"><span class="icon__close"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                         
+                            
+
+                        <div class="loadmore">
+                            <div class="loadmore__info">You've viewed 2 out of 2 products</div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="inner-footer">
+                <div class="container">
+                    <div class="wrap">
+                        <div class="top">
+                            <div class="subscribe">
+                                <h3>Join our newsletter</h3>
+                                <p class="grey-color">Enter your email below to be the first to know about new collections and product launchers</p>
+                                <form action="" class="search">
+                                    <input type="text" class="input" placeholder="Enter your email">
+                                    <input type="submit" class="submit" value="Subscribe">
+                                </form>
+                            </div>
+                            <div class="list-block">
+                                <h3 class="dot-title">Service</h3>
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Delivery Information</a></li>
+                                    <li><a href="#">Term & Condition</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                            <div class="list-block">
+                                <h3 class="dot-title">Pages</h3>
+                                <ul>
+                                    <li><a href="#">My Account</a></li>
+                                    <li><a href="#">Login</a></li>
+                                    <li><a href="#">Wishlist</a></li>
+                                    <li><a href="#">Cart</a></li>
+                                    <li><a href="#">Checkout</a></li>
+                                </ul>
+                            </div>
+                            <div class="list-block">
+                                <h3 class="dot-title">Contracts</h3>
+                                <div class="comp-address grey-color">
+                                    <p>Simpang 5 No.1<br>Central Java - ID</p>
+                                    <p>
+                                        <a href="">+66123456789</a>
+                                        <br>
+                                        <a href="">hello@youtube.com</a>
+                                    </p>
+                                    <p>
+                                        Weekdays: 6AM to 6PM<br>
+                                        Saturday: 6AM to 3PM<br>
+                                        Sunday: Closed
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="list-inline">
+                                <ul>
+                                    <li><a href=""><i class="ri-facebook-line"></i></a></li>
+                                    <li><a href=""><i class="ri-instagram-line"></i></a></li>
+                                    <li><a href=""><i class="ri-twitter-line"></i></a></li>
+                                    <li><a href=""><i class="ri-pinterest-line"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="copyright">
+                                <p> copyright &copy; 2024 REGALIX All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <div class="overlay" id="overlay" data-overlay ></div>
+    <!-- Overlay -->
+    <div id="mobile-menu" class="mobile-menu">
+        <!-- Close Button -->
+        <div class="wrapper">
+            <a href="#" class="close-trigger">
+                <div class="icon-small"><i class="fal fa-times"></i></div>
+            </a>
+            <!-- Main Menu -->
+            <div class="main-menu scrollto">
+                <div class="head-menu flexitem">
+                    <div class="button active" data-target="men">
+                        <a href="#">Men</a>
+                    </div>
+                    <div class="button" data-target="women">
+                        <a href="women-page.html">Women</a>
+                    </div>
+                </div>
+                <!-- MEN -->
+                <nav class="wrapper menu-section active" id="men">
+                    <ul>
+                        
+                        <li class="has-child">
+                            <a class="child-trigger" href="#">
+                            <span class=""><h4>New Arrivals</h4></span>
+                            <span class="arrow-down"><i class="fal fa-chevron-down"></i></span>
+                            </a>
+                            <ul class="sub-menu list-block">
+                                <li><a id="mega-text" href="#">This Week</a></li>
+                                <li><a id="mega-text" href="#">Previous Week</a></li>
+                                <li><a id="mega-text" href="#">Exclusive</a></li>
+                                <li><a id="mega-text" href="#">New Season</a></li>
+                                <li><a id="mega-text" href="#">This Week</a></li>
+                                <li><a id="mega-text" href="#">Previous Week</a></li>
+                                <li><a id="mega-text" href="#">Exclusive</a></li>
+                                <li><a id="mega-text" href="#">New Season</a></li>
+                                <li><a id="mega-text" href="#">This Week</a></li>
+                                <li><a id="mega-text" href="#">Previous Week</a></li>
+                                <li><a id="mega-text" href="#">Exclusive</a></li>
+                                <li><a id="mega-text" href="#">New Season</a></li>
+                                <li><a id="mega-text" href="#">This Week</a></li>
+                                <li><a id="mega-text" href="#">Previous Week</a></li>
+                                <li><a id="mega-text" href="#">Exclusive</a></li>
+                                <li><a id="mega-text" href="#">New Season</a></li>
+                                <li><a id="mega-text" href="#">This Week</a></li>
+                                <li><a id="mega-text" href="#">Previous Week</a></li>
+                                <li><a id="mega-text" href="#">Exclusive</a></li>
+                                <li><a id="mega-text" href="#">New Season</a></li>
+                                <li><a id="mega-text" href="#">This Week</a></li>
+                                <li><a id="mega-text" href="#">Previous Week</a></li>
+                                <li><a id="mega-text" href="#">Exclusive</a></li>
+                                <li><a id="mega-text" href="#">New Season</a></li>
+                                <li><a id="mega-text" href="#">This Week</a></li>
+                                <li><a id="mega-text" href="#">Previous Week</a></li>
+                                <li><a id="mega-text" href="#">Exclusive</a></li>
+                                <li><a id="mega-text" href="#">New Season</a></li>
+                                <li><a id="mega-text" href="#">This Week</a></li>
+                                <li><a id="mega-text" href="#">Previous Week</a></li>
+                                <li><a id="mega-text" href="#">Exclusive</a></li>
+                                <li><a id="mega-text" href="#">New Season</a></li>
+                                <li><a id="mega-text" href="#">This Week</a></li>
+                                <li><a id="mega-text" href="#">Previous Week</a></li>
+                                <li><a id="mega-text" href="#">Exclusive</a></li>
+                                <li><a id="mega-text" href="#">New Season</a></li>
+                                <li><a id="mega-text" href="#">This Week</a></li>
+                                <li><a id="mega-text" href="#">Previous Week</a></li>
+                                <li><a id="mega-text" href="#">Exclusive</a></li>
+                                <li><a id="mega-text" href="#">New Season</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-child">
+                            <a class="child-trigger" href="shop.html">
+                                <span class=""><h4>Clothing</h4></span>
+                                <span class="arrow-down"><i class="fal fa-chevron-down"></i></span>
+                            </a>
+                        </li>
+                        <li class="has-child">
+                            <a class="child-trigger" href="#">
+                                <span class=""><h4>Shoes</h4></span>
+                                <span class="arrow-down"><i class="fal fa-chevron-down"></i></span>
+                            </a>
+                        </li>
+                        <li class="has-child">
+                            <a class="child-trigger" href="#">
+                                <span class=""><h4>Bags</h4></span>
+                                <span class="arrow-down"><i class="fal fa-chevron-down"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="wrapper menu-section" id="women">
+                    <ul>
+                        <li class="has-child">
+                            <a class="child-trigger" href="#">
+                            <span class=""><h4>New Arrivals</h4></span>
+                            <span class="arrow-down"><i class="fal fa-chevron-down"></i></span>
+                            </a>
+                            <ul class="sub-menu list-block">
+                                <li><a id="mega-text" href="#">This Week</a></li>
+                                <li><a id="mega-text" href="#">Previous Week</a></li>
+                                <li><a id="mega-text" href="#">Exclusive</a></li>
+                                <li><a id="mega-text" href="#">New Season</a></li>
+                                <li><a id="mega-text" href="#">This Week</a></li>
+                                <li><a id="mega-text" href="#">Previous Week</a></li>
+                                <li><a id="mega-text" href="#">Exclusive</a></li>
+                                <li><a id="mega-text" href="#">New Season</a></li>
+                                <li><a id="mega-text" href="#">This Week</a></li>
+                                <li><a id="mega-text" href="#">Previous Week</a></li>
+                                <li><a id="mega-text" href="#">Exclusive</a></li>
+                                <li><a id="mega-text" href="#">New Season</a></li>
+                                <li><a id="mega-text" href="#">This Week</a></li>
+                                <li><a id="mega-text" href="#">Previous Week</a></li>
+                                <li><a id="mega-text" href="#">Exclusive</a></li>
+                                <li><a id="mega-text" href="#">New Season</a></li>
+                                <li><a id="mega-text" href="#">This Week</a></li>
+                                <li><a id="mega-text" href="#">Previous Week</a></li>
+                                <li><a id="mega-text" href="#">Exclusive</a></li>
+                                <li><a id="mega-text" href="#">New Season</a></li>
+                                <li><a id="mega-text" href="#">This Week</a></li>
+                                <li><a id="mega-text" href="#">Previous Week</a></li>
+                                <li><a id="mega-text" href="#">Exclusive</a></li>
+                                <li><a id="mega-text" href="#">New Season</a></li>
+                                <li><a id="mega-text" href="#">This Week</a></li>
+                                <li><a id="mega-text" href="#">Previous Week</a></li>
+                                <li><a id="mega-text" href="#">Exclusive</a></li>
+                                <li><a id="mega-text" href="#">New Season</a></li>
+                                <li><a id="mega-text" href="#">This Week</a></li>
+                                <li><a id="mega-text" href="#">Previous Week</a></li>
+                                <li><a id="mega-text" href="#">Exclusive</a></li>
+                                <li><a id="mega-text" href="#">New Season</a></li>
+                                <li><a id="mega-text" href="#">This Week</a></li>
+                                <li><a id="mega-text" href="#">Previous Week</a></li>
+                                <li><a id="mega-text" href="#">Exclusive</a></li>
+                                <li><a id="mega-text" href="#">New Season</a></li>
+                                <li><a id="mega-text" href="#">This Week</a></li>
+                                <li><a id="mega-text" href="#">Previous Week</a></li>
+                                <li><a id="mega-text" href="#">Exclusive</a></li>
+                                <li><a id="mega-text" href="#">New Season</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-child">
+                            <a class="child-trigger" href="shop.html">
+                                <span class=""><h4>Clothing</h4></span>
+                                <span class="arrow-down"><i class="fal fa-chevron-down"></i></span>
+                            </a>
+                        </li>
+                        <li class="has-child">
+                            <a class="child-trigger" href="#">
+                                <span class=""><h4>Shoes</h4></span>
+                                <span class="arrow-down"><i class="fal fa-chevron-down"></i></span>
+                            </a>
+                        </li>
+                        <li class="has-child">
+                            <a class="child-trigger" href="#">
+                                <span class=""><h4>Bags</h4></span>
+                                <span class="arrow-down"><i class="fal fa-chevron-down"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-nav-footer flexitem">
+                    <a href="wishlist-page.html">
+                        <div class="icon-small"><i class="fal fa-star"></i></div>
+                    </a>
+                    <a href="cart-page.html" class="iscart">
+                        <span class="shoppingbag__counter">1</span>
+                        <span class="icon-small"><i class="fal fa-shopping-bag end-icon"></i></span></a>
+                </div>
+                <div class="mobile-nav-footer button2">
+                    <a href="#" class="secondary-btn">Login</a>
+                    <a href="#" class="primary-btn">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Menu -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

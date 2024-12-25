@@ -1,0 +1,163 @@
+body {
+ 
+}
+
+.login.wrapper {
+    padding: 0 425px;
+    margin-top: 10rem;
+}
+
+.login-container, .signup-container {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+/* Container for social login buttons */
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #f3f3f3;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+button img {
+    width: 20px;
+    height: 20px;
+}
+
+.google-login {
+    background-color: white;
+    border-color: #ddd;
+}
+
+.google-login:hover {
+    background-color: #f9f9f9;
+}
+
+.apple-login {
+    background-color: #000;
+    color: white;
+    border-color: #000;
+}
+
+.apple-login:hover {
+    background-color: #333;
+}
+
+/* Divider between social login and email/password */
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.divider:before,
+.divider:after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: #ddd;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+    .login-container, .signup-container {
+        width: 90%; /* Take up 90% of the screen width on small screens */
+        padding: 15px;
+    }
+
+    input {
+        width: 100%; /* Make input fields take up full width */
+    }
+
+    .social-login button {
+        font-size: 12px; /* Reduce font size on small screens */
+    }
+
+    button {
+        padding: 12px; /* Increase button padding on small screens */
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .login-container, .signup-container {
+        width: 80%; /* 80% width on medium screens */
+        padding: 20px;
+    }
+
+    .social-login button {
+        font-size: 14px; /* Slightly larger font size on medium screens */
+    }
+
+    button {
+        padding: 12px; /* Increase padding for better clickability */
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Styles for larger screens (tablets, desktops) */
+    .login-container, .signup-container {
+        width: 350px; /* Keep the width fixed for larger screens */
+    }
+
+    .social-login button {
+        font-size: 16px; /* Larger font size for desktop */
+    }
+
+    button {
+        padding: 15px;
+    }
+}

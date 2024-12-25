@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Item</title>
+    <style>
+        .pricing__info__percentage {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="orderiteminfo__body">
+    <a href="#">
+        <img alt="Leather Crossbody Bag" class="orderiteminfo__image" src="images/clothing/16.png">
+    </a>
+    <div class="orderiteminfo__details">
+        <div class="orderiteminfo__section orderiteminfo__section--details">
+            <div class="orderiteminfo__info">
+                <a href="#">
+                    <span class="orderiteminfo__designer">Cobra Bold</span>
+                    <span class="orderiteminfo__name">
+                            <span class = "productDes">Leather crossbody bag</span>
+                            <span>Item No.: </span><span class = "productNo">P00980021</span>
+                        </span>
+                </a>
+            </div>
+        </div>
+        <div class="orderiteminfo__section orderiteminfo__section--price">
+            <div class="orderiteminfo__section__pricingwrappper">
+                    <span class="orderiteminfo__value">
+                        <div class="pricing pricing--sale pricing--large">
+                            <div class="pricing__prices">
+                                <div class="pricing__prices__wrapper">
+                                    <span class="pricing__prices__value pricing__prices__value--original">
+                                        <span class="pricing__prices__price">฿ 1,675.00</span>
+                                    </span>
+                                    <span class="pricing__prices__value pricing__prices__value--discount">
+                                        <span class="pricing__prices__price">฿ 1,172.00</span>
+                                    </span>
+                                </div>
+                                <div class="pricing__info">
+                                    <span class="pricing__info__percentage">30% off</span>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+            </div>
+        </div>
+        <div class="orderiteminfo__section">
+            <label class="orderiteminfo__label" for="cart-quantity-item-96346206">Quantity:</label>
+            <div class="quantityinput__container">
+                <input class="quantityinput__input" id="cart-quantity-item-96346206" inputmode="numeric" type="number" value="1" min="1" aria-describedby="last-units-tooltip-96346206">
+                <div class="quantityinput__lastunitstooltip">
+                    <span class="quantityinput__lastunitstooltip__content" id="last-units-tooltip-96346206">Low stock</span>
+                </div>
+            </div>
+        </div>
+        <div class="orderiteminfo__section orderiteminfo__section__subtotal--mobile">
+            <span class="orderiteminfo__label">Subtotal:</span>
+            <span class="orderiteminfo__value__subtotal">
+                    <span class="orderiteminfo__section__pricingwrappper">
+                        <div class="pricing pricing--sale">
+                            <div class="pricing__prices">
+                                <div class="pricing__prices__wrapper">
+                                    <span class="pricing__prices__value pricing__prices__value--original">
+                                        <span class="pricing__prices__price">฿ 1,675.00</span>
+                                    </span>
+                                    <span class="pricing__prices__value pricing__prices__value--discount">
+                                        <span class="pricing__prices__price">฿ 1,172.00</span>
+                                    </span>
+                                </div>
+                                <div class="pricing__info">
+                                    <span class="pricing__info__percentage">(30% off)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                </span>
+        </div>
+        <div class="orderiteminfo__section orderiteminfo__section__subtotal--desktop">
+            <div>
+                <span class="orderiteminfo__label">Subtotal:</span>
+                <span class="orderiteminfo__value__subtotal">฿ 1,172.00</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Price details
+    const originalPrice = 1675.00;  // Original price of the item
+    const discountedPrice = 1172.00; // Discounted price of the item
+    const quantityInput = document.getElementById('cart-quantity-item-96346206');
+    const subtotalElement = document.querySelector('.orderiteminfo__value__subtotal');
+    const originalPriceElement = document.querySelector('.pricing__prices__value--original .pricing__prices__price');
+    const discountedPriceElement = document.querySelector('.pricing__prices__value--discount .pricing__prices__price');
+    const discountPercentageElement = document.querySelector('.pricing__info__percentage');
+
+    // Update the price based on quantity
+    function updatePrice() {
+        const quantity = parseInt(quantityInput.value);
+        const newSubtotal = discountedPrice * quantity;
+        const originalTotal = originalPrice * quantity;
+
+        // Update the original price displayed
+        originalPriceElement.textContent = `฿ ${originalTotal.toFixed(2)}`;
+
+        // Update the discounted price displayed
+        discountedPriceElement.textContent = `฿ ${newSubtotal.toFixed(2)}`;
+
+        // Update the subtotal display
+        subtotalElement.textContent = `฿ ${newSubtotal.toFixed(2)}`;
+
+        // Calculate and display the discount percentage
+        const discountPercentage = ((originalPrice - discountedPrice) / originalPrice) * 100;
+        discountPercentageElement.textContent = `(${discountPercentage.toFixed(0)}% off)`;
+    }
+
+    // Listen for quantity changes
+    quantityInput.addEventListener('input', updatePrice);
+
+    // Initial update when the page loads
+    updatePrice();
+</script>
+</body>
+</html>

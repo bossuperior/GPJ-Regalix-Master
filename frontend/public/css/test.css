@@ -1,0 +1,52 @@
+:root {
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --light-bg-color: #f2f3f5;
+    --light-text-color: #7c889a;
+    --grey-color: #687080;
+    --bordoer-color: #e5e8ec;
+    --dark-color: #212121;
+  
+  
+    --prim-font: 'Ubuntu', sans-serif;
+    
+  
+  
+    --font-small:13px;
+    --fs14: 14px;
+    --font-smaller: 11px;
+  
+    --percent100: 100%;
+    --percent50: 50%;
+  
+    --fw2: 200;
+    --fw3: 300;
+    --fw5: 500;
+    --fw6: 600;
+    --fw7: 700;
+    --fw8: 800;
+  
+    --trans-background-color: background-color .3s, color .3s;
+    --trans-background: background-color .3s;
+    --trans-color: color .3s;
+    --trans-border: border .3s;
+    --trans-transform: transform .3s;
+  
+    --shadow: 0px 10px 20px 0px rgb(0 0 0 /20%);
+    --fade: fade-bottom .3s cubic-bezier(0.39, 0.575, .0565, 1) both;
+  
+    --swiper-theme-color: var(var(--black-color));
+    
+  
+}
+
+
+.heading {
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (min-width: 992px) {
+   
+}
