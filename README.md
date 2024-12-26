@@ -12,3 +12,5 @@
 - 6652300656 Natthawut Ongkhachuen 
 - 6652300923 Setthawut Baowanont 
 - 6652300931 Komkrit Tungtatiyapat
+
+###  Noted: We wrote a .gitignore file to exclude the node_modules folder. Therefore, you need to install the node_modules again. The list of modules can be found in the package.json file.
