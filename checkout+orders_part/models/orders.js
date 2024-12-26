@@ -1,6 +1,7 @@
 /*1.Connect to MongoDB*/
 const mongoose = require('mongoose')
-const dbUrl = 'mongodb://127.0.0.1:27017/cart' //If productDB doesn't exist in the database, it will be automatically created.
+const dbUrl = 'mongodb+srv://waraphon10000:QzpXbtKZYOXmeGqF@cluster0.59h5h.mongodb.net/order?retryWrites=true&w=majority';
+ //If productDB doesn't exist in the database, it will be automatically created.
 mongoose.connect(dbUrl,{
     //Configure the proper new driver version.
     useNewUrlParser:true,

@@ -1,0 +1,19 @@
+{
+  "name": "g3_regalix",
+  "version": "1.0.0",
+  "description": "![img.png](img.png)",
+  "main": "index.js",
+  "scripts": {
+    "check-modules": "node -e \"if (!require('fs').existsSync('node_modules')) { require('child_process').execSync('npm install', { stdio: 'inherit' }); }\"",
+    "start": "npm run check-modules && concurrently \"npm run start:frontend\" \"npm run start:backend\" \"npm run start:checkout\"",
+    "start:backend": "cd Backend && npm install && npm start",
+    "start:frontend": "cd frontend && npm install && npm start",
+    "start:checkout": "cd checkout+orders_part && npm install && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

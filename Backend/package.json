@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server"
+    "check-modules": "node -e \"if (!require('fs').existsSync('node_modules')) { require('child_process').execSync('npm install', { stdio: 'inherit' }); }\"",
+    "start": "npm run check-modules && nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
